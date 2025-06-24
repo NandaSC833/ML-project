@@ -1,5 +1,7 @@
 import sys
 import pandas as pd
+import os
+import logging
 from src.exception import CustomException
 from src.utils import load_object
 
@@ -10,6 +12,7 @@ class PredictPipeline:
 
     def predict(self,features):
         try:
+            import os
             model_path=os.path.join("artifacts","model.pkl")
             preprocessor_path=os.path.join('artifacts','preprocessor.pkl')
             print("Before Loading")
@@ -18,6 +21,9 @@ class PredictPipeline:
             print("After Loading")
             data_scaled=preprocessor.transform(features)
             preds=model.predict(data_scaled)
+            logging.basicConfig(level=logging.INFO)
+            logging.info(f"Prediction: {preds}")
+
             return preds
         
         except Exception as e:
