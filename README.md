@@ -1,9 +1,9 @@
 ## ML project
 ##notebook/
 
--1. EDA STUDENT PERFORMANCE.ipynb: Exploratory Data Analysis on student performance (math, reading, writing) covering data checks, stats, distribution, and insights like performance by gender or test prep
+1. EDA STUDENT PERFORMANCE.ipynb: Exploratory Data Analysis on student performance (math, reading, writing) covering data checks, stats, distribution, and insights like performance by gender or test prep
 
--2. MODEL TRAINING.ipynb: Likely covers training regression/classification models (massive, but not previewed).
+2. MODEL TRAINING.ipynb: Likely covers training regression/classification models (massive, but not previewed).
 
 ##src/: Source code — contains pipeline modules for preprocessing, model training, evaluation.
 
